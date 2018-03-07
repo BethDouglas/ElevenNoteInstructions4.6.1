@@ -38,6 +38,7 @@ namespace ElevenNote.Web.Controllers
 
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new NoteService(userId);
+
             service.CreateNote(model);
 
             return RedirectToAction("Index");
