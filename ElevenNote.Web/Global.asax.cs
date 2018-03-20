@@ -15,6 +15,7 @@ namespace ElevenNote.Web
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            WebApiConfig.Register();
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
